@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Your Response</title>
+    <link rel="stylesheet" href="response.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="survey.js"></script>
+</head>
+
+<body onload="displayData()">
+    <div class="global-holder">
+        <div class="response-holder">
+
+            <h3 class="word-response">Your Response</h3>
+
+            <div class="respondents-info">
+                <table>
+                    <tr>
+                        <th class="Profile-text">Respondents Profile</th>
+                    </tr>
+                    <tr>
+                        <td class="cname">Complete Name:</td>
+                        <td><p id="lastname" class="lastname"></p></td>
+                        <td><p>,</p></td>
+                        <td><p id="firstname" class="firstname"></p></td>
+                        <td><p id="middlename" class="middlename"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="gender">Gender:</td>
+                        <td><p id="gender" class="gndr"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="course">Course:</td>
+                        <td><p id="user-course" class="kors"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="yrandsec">Year & Section:</td>
+                        <td><p id="YrSec" class="yrsc"></p></td>
+                    </tr>
+                </table>
+            </div>
+            <pre>
+               
+            </pre>
+            <div class="survey-answers">
+                <h3>Your answers</h3>
+                <p>1. Did you attend the INTRAMURUALS 2023 Nov 28 - Dec 2?</p>
+                <p id="answer1"></p>
+                <p id="other1"></p>
+                <pre></pre>
+                <p>2. Did you enjoy attending the intramuruals?</p>
+                <p id="answer2"></p>
+                <p id="other2"></p>
+                <pre></pre>
+                <p>3. What particular event did you enjoy the most?</p>
+                <p id="answer3"></p>
+                <p id="others3"></p>
+                <pre></pre>
+                <p>4. What particular event did you participated/join?</p>
+                <p id="checkbox"></p>
+                <p id="answer4"></p>
+                <pre></pre>
+                <p>5. If you're given a chance to add a particular event, what is it? and why?</p>
+                <p id="answer5"></p>
+
+            </div>
+            <pre>               
+            </pre>
+            <div class="home">
+                <a href="survey.html" class="homebutton">Go Home</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

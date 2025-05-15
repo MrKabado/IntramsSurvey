@@ -1,0 +1,79 @@
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: #d8eefe;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.response-holder {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0px 0px 3px #1f1235;
+    border: solid #094067;
+    border-top-width: 10px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+
+}
+
+p {
+    color: #1b1425;
+}
+
+table,th, td {
+    padding:0px 10px 0px 10px;
+    border-collapse: collapse;
+}
+
+.word-response {
+    text-align: center;
+    font-size: 30px;
+    color: #094067;
+}
+
+.Profile-text {
+    color: #094067;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cname, .gender, .course, .yrandsec {
+    font-weight: bold;
+}
+
+.lastname, .firstname, .middlename, .gndr, .kors, .yrsc {
+    color: #094067;
+    font-weight: bold;
+    
+}
+
+#answer1, #other1, #answer2, #other2, #answer3, #others3, #checkbox, #answer4, #answer5 {
+    color: #094067;
+    font-weight: bold;
+}
+
+.homebutton {
+    border: 1px solid black;
+    background-color: #094067;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.homebutton:hover {
+    border: 1px solid #094067;
+    background-color: white;
+    color: #094067;
+    box-shadow: 0px 0px 2px #094067;
+    transition: 0.5px;
+}
+
+
+

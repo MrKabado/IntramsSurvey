@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intramurals Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat&display=swap" rel="stylesheet">
+
+    <script defer src="survey.js"></script>
+</head>
+<body>
+
+    <div class="global-holder">
+        
+        
+        <div class="survey-holder">
+
+            <h3 class="survey-title">INTRAMURALS SURVEY</h3>
+            <div class="students-info">
+                <form action="">
+                <table>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" id="lname" class="lname" required></td>
+                        <td>First Name:</td>
+                        <td><input type="text" id="fname" class="fname" required></td>
+                        <td>Middle Name:</td>
+                        <td><input type="text" id="mname" class="mname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" value="Male" name="gender" id="male" required><label for="male" class="gender">Male</label>
+                            <input type="radio" value="Female" name="gender" id="female" required><label for="female" class="gender">Female</label>
+
+                        </td>
+                        <td>Course:</td>
+                        <td><input type="text" id="course" class="course" placeholder="ex. BSIT" required></td>
+                        <td>Year & Section:</td>
+                        <td><input type="text" id="yr&sec" class="yrandsec" placeholder="ex. 1-I" required></td>
+                    </tr>                   
+                </table>
+                <pre></pre>
+                <hr>
+
+            </div>
+            <div class="questions">
+
+                <h4 class="survey-questions">Survey Questions</h4>
+
+                <p>1. Did you attend the INTRAMURUALS 2023 Nov 28 - Dec 2?</p>
+                <p><input type="radio" name="YesNo1" value="Yes" id="yes1" required><label for="yes1">Yes</label>&nbsp;<input type="radio" name="YesNo1" value="No" id="no1" required><label for="no1">No</label></p>
+                <p><input type="text" id="IfNo1" class="IfNo1" placeholder="If no, Please enter the reasons"></p>
+
+                <pre></pre>
+
+                <p>2. Did you enjoy attending the intramuruals?</p>
+                <p><input type="radio" name="YesNo2" value="Yes" id="yes2" required><label for="yes2">Yes</label>&nbsp;<input type="radio" name="YesNo2" value="No" id="no2" required><label for="no2">No</label></p>
+                <p><input type="text" id="IfNo2" class="IfNo2" placeholder="If no, Please enter the reasons" required></p> 
+
+                <pre></pre>
+
+                <p>3. What particular event did you enjoy the most?</p>
+                <select name="Intrams Event" id="intrams-event" required>
+                    <option value="Confetti War">Confetti War</option>
+                    <option value="Mr & Ms Intramurals">Mr & Ms Intrams</option>
+                    <option value="Mobile Legends (E-sports)">Mobile Legends (E-Sports)</option>
+                    <option value="Valorant (E-sports)">Valorant (E-Sports)</option>
+                    <option value="Volleyball (Sports)">Volleyball (Sports)</option>
+                    <option value="Basketball (Sports)">Basketball (Sports)</option>
+                    <option value="Darts">Darts</option>
+                    <option value="Dancesports">DanceSports</option>
+                    <option value="Chess">Chess</option>
+                    <option value="Declemation">Declemation</option>
+                    <option value="Battle of the bands">Battle of the bands</option>
+                    <option value="None of the above">None of the above</option>
+                </select>
+                <p><input type="text" id="IfNo3" class="IfNo3" placeholder="If none of the above, Please specify"></p>
+
+                <pre></pre>
+
+                <p>4. What particular event did you participated in?</p>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox1" value="Confetti War" required><label for="checkbox1">Confetti War</label></td>
+                        <td><input type="checkbox" id="checkbox2" value="Mr & Ms Intramurals" required><label for="checkbox2">Mr & Ms Intramurals</label></td>
+                        <td><input type="checkbox" id="checkbox3" value="Mobile Legends (E-sports)" required><label for="checkbox3">Mobile Legends (E-sports)</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox4" value="Valorant (E-sports)" required><label for="checkbox4">Valorant(E-sports)</label></td>
+                        <td><input type="checkbox" id="checkbox5" value="Volleyball" required><label for="checkbox5">Volleyball</label>
+                        <td><input type="checkbox" id="checkbox6" value="Basketball"><label for="checkbox6">Basketball</label>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox7" value="Darts"><label for="checkbox7">Darts</label>
+                        <td><input type="checkbox" id="checkbox8" value="Dance Sports"><label for="checkbox8">Dance Sports</label>
+                        <td><input type="checkbox" id="checkbox9" value="Chess"><label for="checkbox9">Chess</label>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox10" value="Declemation"><label for="checkbox10">Declemation</label>
+                        <td><input type="checkbox" id="checkbox11" value="Battle of the bands"><label for="checkbox11">Battle of the bands</label>
+                        <td><input type="checkbox" id="checkbox12" value="None or Other"><label for="checkbox12">None or Other</label>
+                    </tr>
+                </table>
+
+                <p><input type="text" id="joinevent" class="joinevent" placeholder="If other, please specify" required></p>
+
+                <pre></pre>
+
+                <p>5. If you're given a chance to add a particular event, what is it? and why?</p>
+                <textarea name="addevent" id="addevent" class="addevent" cols="60" rows="10" placeholder="Enter here your answers" required></textarea>
+                
+                <pre></pre>
+
+                <input type="submit" id="submit" class="submit" onclick="getData()">
+                <p id="required"></p>
+            </div>
+        </form>
+        </div>
+    
+        
+    </div>
+</body>
+</html>
